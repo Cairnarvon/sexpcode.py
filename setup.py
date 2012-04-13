@@ -12,7 +12,6 @@ if not os.path.isdir('sexpcode'):
         print >> sys.stderr, "Couldn't clone SexpCode repository!"
 
 sexpcode = Extension('sexpcode',
-                     define_macros = [('SEXPCODE_QUIET', '1')],
                      sources = ['sexpcode.c',
                                 'sexpcode/sexpcode.c',
                                 'sexpcode/html.c'])
